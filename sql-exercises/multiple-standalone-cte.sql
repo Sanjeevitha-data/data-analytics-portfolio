@@ -22,7 +22,7 @@ GROUP BY customerid
 SELECT
 	c.customerid,
 	c.firstname,
-	COALESCE (c.lastname, '-'),
+	COALESCE (c.lastname, '-') AS lastname,
 	cts.totalsales,
 	clo.last_order
 FROM sales.customers AS c
