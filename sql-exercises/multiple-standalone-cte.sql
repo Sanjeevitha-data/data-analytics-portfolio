@@ -29,4 +29,4 @@ FROM sales.customers AS c
 LEFT JOIN CTE_total_sales AS cts
 ON cts.customerid = c.customerid
 LEFT JOIN CTE_last_order AS clo
-ON clo.customerid = c.customerid
+ON clo.customerid = c.customerid;
